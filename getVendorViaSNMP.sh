@@ -13,4 +13,4 @@
 
 community=$1
 host=$2
-snmpwalk -v2c -c $community $host .1.3.6.1.2.1.1.2.0 | cut -d "." -f 15
+snmpget -v2c -c $community $host .1.3.6.1.2.1.1.2.0 | cut -d "." -f 15
